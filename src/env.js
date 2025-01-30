@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+
+// @ts-expect-error Module resolution error
+
 import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
 

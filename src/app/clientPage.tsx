@@ -10,13 +10,7 @@ import { InitializationMessages } from '~/components/terminal/initial-messages';
 import { MessageList } from '~/components/terminal/message-list';
 import { TerminalInput } from '~/components/terminal/terminal-input';
 
-export default function HomePageClient({
-    numFailedUsers,
-    numFailedMessages
-} : {
-    numFailedUsers: number;
-    numFailedMessages: number;
-}) {
+export default function HomePageClient() {
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState('');
     const [isStreaming, setIsStreaming] = useState(false);
